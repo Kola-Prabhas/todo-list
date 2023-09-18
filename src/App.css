@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap');
+
+.task-manager {
+	background-color: #3c1f3b;
+	width: 700px;
+	margin: auto;
+	border-radius: 20px;
+	padding-bottom: 10px;
+	color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.heading {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.task-adder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-adder > input {
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: black;
+	color: white;
+	opacity: 0.75;
+	border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.task-adder > input:focus {
+	font-weight: 700;
+	border: 2px solid rgb(225, 105, 0);
+	
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.task-sort {
+	display: flex;
+	justify-content: center;
+}
+
+
+.custom-button {
+	margin: 0 20px;
+	font-size: 18px;
+	border-radius: 8px;
+	padding: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	transition: all 0.25s;
+	cursor: pointer;
+}
+
+
+.custom-button:hover {
+	background-color: black;
+	color: white;
+	
+}
+
+
+.list {
+	list-style-type: none;
+	margin: 20px auto;
+	padding:0;
+	padding-left: 10px;
+	color: white;
+	font-family: 'Geologica', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.list > li {
+	border: 1px solid rgb(165, 83, 31);
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 10px;
+	width: 80%;
+}
+
+.list > li:hover {
+	background-color: rgb(241, 143, 58);
+	color: black;
+	border-color: white;
+}
+
+
+
+.title {
+	display: inline-block;
+	max-width: 80%;
+}
+
+
+.list-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon {
+	border-radius: 50%;
+	padding: 10px;
+	margin-left: 5px;
+    cursor: pointer;
+}
+
+.icon:hover {
+	color: aqua;
+}
+
+
+.text-style {
+	text-decoration: line-through;
 }
